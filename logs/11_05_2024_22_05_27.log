@@ -1,0 +1,1 @@
+[2024-11-05 22:05:27,866] ERROR in exception.py at line 45: Error occurred in python script name [C:\MLPROJECTS\src\exception.py] line number [41] error message [division by zero]
