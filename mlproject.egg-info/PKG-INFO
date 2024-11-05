@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mlproject
+Version: 0.0.1
+Summary: A machine learning project template
+Author: Zeeshan
+Author-email: Zeeshank9371@gmail.com
+License: MIT
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
