@@ -2,7 +2,7 @@ import sys
 import logging
 import os
 from datetime import datetime
-
+from src.logger import logging
 # Configure logging to include timestamps and log level
 LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 logs_path = os.path.join(os.getcwd(), "logs")
@@ -34,12 +34,12 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
 
-# Main code block to trigger the exception and log it
-if __name__ == "__main__":
-    try:
-        # This line will cause a ZeroDivisionError
-        a = 1 / 0
-    except Exception as e:
-        # Log and raise a custom exception with details
-        custom_exception = CustomException(e, sys)
-        logging.error(custom_exception)  # Log the custom exception message only
+# # Main code block to trigger the exception and log it
+# if __name__ == "__main__":
+#     try:
+#         # This line will cause a ZeroDivisionError
+#         a = 1 / 0
+#     except Exception as e:
+#         # Log and raise a custom exception with details
+#         custom_exception = CustomException(e, sys)
+#         logging.error(custom_exception)  # Log the custom exception message only
